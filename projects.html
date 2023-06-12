@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjay Kumar(Portfolio)</title>
+  <!-- STYLESHEET LINK -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- GOOGLE FONT LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <!-- FONT AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-branding">SANJAY</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button type="submit" class="cta"
+            onclick="window.location.href = 'https://drive.google.com/file/d/1hizEp8A5ybWM63kONBVVosqLge2TiyhM/view'">Download
+            Resume</button>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN SECTION -->
+
+  <h1 class="projects-main-head">PROJECTS</h1>
+
+  <section id="DocusecureApp">
+    <div class="projects-page-main">
+      <div>
+        <div class="projects-page-main-child-1">
+          <h2>Docusecure</h2><br>
+          <p>A WebApp where user can create account and securely store documents and used passport.JS for
+            authentication.</p><br>
+          <p>Technologies Used -</p>
+          <p>HTML | CSS | JS | Bootstrap | Node.JS | Express.JS | mongoDB | AWS</p>
+          <p>
+            <button class="projects-page-button"
+              onClick="parent.location='https://docusecureapp.onrender.com'">TRY</button>
+            <button class="projects-page-button"
+              onClick="parent.location='https://github.com/sanjay-gangishetty/docusecure'">View Code</button>
+          </p>
+        </div>
+        <div class="projects-page-main-child-2">
+          <img src="docusecure.png" alt="docusecure image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Weatherapp">
+    <div class="projects-page-main">
+      <div>
+        <div class="projects-page-main-child-1">
+          <img src="weatherpoint.png" alt="weatherpoint image">
+        </div>
+        <div class="projects-page-main-child-2">
+          <h2>Weather Point</h2><br>
+          <p>
+            A Weather API based application where user can input area name and check for real time weather information.
+          </p><br>
+          <p>Technologies Used - </p>
+          <p> HTML | CSS | JS | Node.JS | Express.JS | Bootstarp</p>
+          <p>
+            <button class="projects-page-button"
+              onClick="parent.location='https://weather-point.onrender.com/'">TRY</button>
+            <button class="projects-page-button"
+              onClick="parent.location='https://github.com/sanjay-gangishetty/weather-point'">View Code</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Reactapp">
+    <div class="projects-page-main">
+      <div>
+        <div class="projects-page-main-child-1">
+          <h2>React Chat App</h2><br>
+          <p>A real-time Chat Application created using Socket.io ,where two users can join the room by adding their
+            name and roomid.
+          </p><br>
+          <p>Technologies Used - </p>
+          <p> Node.JS | Express.JS | React JS | Socket.io</p>
+          <p>
+            <button class="projects-page-button"
+              onClick="parent.location='https://docusecureapp.onrender.com'">TRY</button>
+            <button class="projects-page-button"
+              onClick="parent.location='https://github.com/sanjay-gangishetty/react-chat-app'">View Code</button>
+          </p>
+        </div>
+        <div class="projects-page-main-child-2">
+          <img src="chatapp.png" alt="chatapp image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <section class="projects-page-footer">
+    <footer>
+      <span class="footer-elements"><a href="https://github.com/sanjay-gangishetty"><i
+            class="fa-brands fa-github"></i></a></span>
+      <span class="footer-elements"><a href="mailto:gangishettysanjaykumar@gmail.com"><i
+            class="fa-regular fa-envelope"></i></a></span>
+      <span class="footer-elements"><a href="https://www.linkedin.com/in/gangishetty-sanjay-kumar-666b741aa"><i
+            class="fa-brands fa-linkedin-in"></i></a></span>
+    </footer>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>

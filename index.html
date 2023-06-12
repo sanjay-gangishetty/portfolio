@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjay Kumar(Portfolio)</title>
+  <!-- STYLESHEET LINK -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- GOOGLE FONT LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <!-- FONT AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-branding">SANJAY</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button type="submit" class="cta"
+            onclick="window.location.href = 'https://drive.google.com/file/d/1hizEp8A5ybWM63kONBVVosqLge2TiyhM/view'">Download
+            Resume</button>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+
+  <section class="home-main">
+    <div class="home-main-child-1">
+      <h3>Hello, I am</h3>
+      <br>
+      <h1>Sanjay Kumar</h1>
+      <br>
+      <p>
+        I am a full stack developer with a passion for building web
+        applications.
+      </p>
+    </div>
+    <div class="home-main-child-2">
+      <img src="home-image.jpg" alt="home image" />
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section class="projects-main">
+    <h1>PROJECTS</h1>
+    <div class="projects-card-main">
+      <div class="card-unit">
+        <div class="card-image">
+          <img src="docusecure-crop.png" alt="docusecure image" />
+        </div>
+        <h2>DocuSecure</h2>
+        <button class="projects-button" onClick="parent.location='projects.html#DocusecureApp'">VIEW</button>
+      </div>
+      <div class="card-unit">
+        <div class="card-image">
+          <img src="weatherpoint.png" alt="weatherpoint image" />
+        </div>
+        <h2 class="weather-point-h2">Weather Point</h2>
+        <button class="projects-button" onClick="parent.location='projects.html#Weatherapp'">VIEW</button>
+      </div>
+      <div class="card-unit">
+        <div class="card-image">
+          <img src="chatapp.png" alt="chatapp image" />
+        </div>
+        <h2>Chat App</h2>
+        <button class="projects-button" onClick="parent.location='projects.html#Reactapp'">VIEW</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About  -->
+
+  <section id="about">
+    <h1>About</h1><br><br>
+    <div class="about-main">
+      <p>
+        My Name is Sanjay.
+        I am a full stack developer with a passion for building web
+        applications. I have a strong background in JavaScript.
+        I am from Hyderabad, I am persuing MCA(Computer Science and IT) from Jain University.
+      </p>
+      <button
+        onclick="window.location.href = 'https://drive.google.com/file/d/1hizEp8A5ybWM63kONBVVosqLge2TiyhM/view'">Download
+        Resume</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <div class="contact-parent">
+      <div class="contact-main-1">
+        <h2>Lets Discuss!</h2>
+        <label>Socials : </label>
+        <span class="footer-elements"><a href="https://github.com/sanjay-gangishetty"><i
+              class="fa-brands fa-github"></i></a></span>
+        <span class="footer-elements"><a href="mailto:gangishettysanjaykumar@gmail.com"><i
+              class="fa-regular fa-envelope"></i></a></span>
+        <span class="footer-elements"><a href="https://www.linkedin.com/in/gangishetty-sanjay-kumar-666b741aa"><i
+              class="fa-brands fa-linkedin-in"></i></a></span>
+        <label>Email : </label>
+        <p class="contact-email">gangishettysanjaykumar@gmail.com</p>
+      </div>
+      <div class="contact-main-2">
+        <div>
+          <div class="input-group">
+            <label>Name : </label>
+            <input type="text" placeholder="Eg. sanjay" onfocus="this.placeholder=''"
+              onblur="this.placeholder='Eg. sanjay'">
+          </div>
+          <div class="input-group">
+            <label>Email : </label>
+            <input type="email" placeholder="Eg. sanjay@gmail.com" onfocus="this.placeholder=''"
+              onblur="this.placeholder='Eg. sanjay@gmail.com'">
+          </div>
+          <div class="input-group">
+            <label>Message... </label>
+            <textarea rows="5" placeholder="Your Message...." onfocus="this.placeholder=''"
+              onblur="this.placeholder='Your Message....'"></textarea>
+          </div>
+          <form action="mailto:gangishettysanjaykumar@gmail.com" method="post" enctype="multipart/form-data">
+            <button type="submit">SEND</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <section class="footer">
+    <footer>
+      <span class="footer-elements"><a href="https://github.com/sanjay-gangishetty"><i
+            class="fa-brands fa-github"></i></a></span>
+      <span class="footer-elements"><a href="mailto:gangishettysanjaykumar@gmail.com"><i
+            class="fa-regular fa-envelope"></i></a></span>
+      <span class="footer-elements"><a href="https://www.linkedin.com/in/gangishetty-sanjay-kumar-666b741aa"><i
+            class="fa-brands fa-linkedin-in"></i></a></span>
+    </footer>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
