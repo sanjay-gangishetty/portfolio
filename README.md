@@ -2,6 +2,8 @@
 
 This is the GitHub repository for my portfolio website. It showcases my projects, skills, and contact information.
 
+The Deployed link - https://sanjay-gangishetty.github.io/portfolio/
+
 ## Table of Contents
 
 - [Description](#description)
