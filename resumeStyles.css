@@ -278,3 +278,122 @@ hr {
         margin: 0 auto;
     }
 }
+
+/* NAVBAR */
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a,
+.contact-parent a {
+    text-decoration: none;
+    color: #e9f8f9;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #181823;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.6s ease;
+    /* For delaying the effect*/
+}
+
+.nav-link:hover {
+    color: #537fe7;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #537fe7;
+    color: #e9f8f9;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.navbar button:hover {
+    background-color: #c0eef2;
+    color: #181823;
+}
+
+.navbar li {
+    font-size: 1.6rem;
+}
+
+/* FOR RESPONSIVENESS OF PAGE */
+
+@media (max-width: 900px) {
+    /* NAVBAR */
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) translateX(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(8px) translateX(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2a2b46;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
