@@ -335,23 +335,6 @@ hr {
     background-color: white;
 }
 
-.navbar button {
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: #537fe7;
-    color: #e9f8f9;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    margin: 20px;
-}
-
-.navbar button:hover {
-    background-color: #c0eef2;
-    color: #181823;
-}
-
 .navbar li {
     font-size: 1.6rem;
 }
@@ -396,4 +379,76 @@ hr {
     .nav-menu.active {
         left: 0;
     }
+}
+
+/* Theme Toggle */
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-icon,
+.dark-icon {
+    display: none;
+}
+
+/* Light Theme Styles */
+/* body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+} */
+
+body.light-theme .container {
+    background: #ffffff;
+    color: #333;
+}
+
+body.light-theme .title {
+    color: #ff7613;
+}
+
+body.light-theme .item_title,
+body.light-theme .profile_name_firstName {
+    color: #333;
+}
+
+body.light-theme .description,
+body.light-theme .item_subtitle,
+body.light-theme .item_preTitle {
+    color: #666;
+}
+
+body.light-theme .downloadBtn {
+    color: var(--primary-color);
+}
+
+body.light-theme .brand-name {
+    color: var(--primary-color);
+}
+
+body.light-theme .bar {
+    background-color: #333;
+}
+
+body.light-theme .nav-link:hover {
+    color: #ff7613;
+}
+
+/* Show/hide appropriate icon based on theme */
+body:not(.light-theme) .dark-icon,
+body.light-theme .light-icon {
+    display: inline-block;
 }
